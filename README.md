@@ -169,5 +169,5 @@ $ python main.py -a ppo -e CartPole-v1
 ##### Baseline network & reinforce learner
   * baseline network 생성 및 코드 추가 (def make_baseline)
     * cuda / log 기능 설정 
-  * ** reinforce learner 코드 추가 
+  * reinforce learner 코드 추가 
     * baseline에 필요한 코드 추가
