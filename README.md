@@ -165,3 +165,9 @@ $ python main.py -a ppo -e CartPole-v1
     * Policy Network의 계층 별 뉴런 수 
   * **critic_hidden_dims**: [64, 64, 64]
     * Value Network의 계층 별 뉴런 수
+
+##### Baseline network & reinforce learner
+  * baseline network 생성 및 코드 추가 (def make_baseline)
+    * cuda / log 기능 설정 
+  * ** reinforce learner 코드 추가 
+    * baseline에 필요한 코드 추가
