@@ -21,7 +21,7 @@ if __name__ == '__main__':
                         '--env',
                         help='run type {CartPole-v1, Acrobot-v1, LunarLander-v2, LunarLanderContinuous-v2}',
                         type=str,
-                        default='CartPole-v1')
+                        default='Acrobot-v1')
 
     args = parser.parse_args()
 
