@@ -1,5 +1,5 @@
 # Single Agent
-#from rl.agents.reinforce.reinforce import REINFORCE
+from rl.agents.reinforce.reinforce import REINFORCE
 
 from rl.agents.a2c.a2c import A2C
 # from rl.agents.ppo.ppo import PPO
@@ -8,7 +8,7 @@ from rl.agents.a2c.a2c import A2C
 
 REGISTRY = {}
 
-#REGISTRY["reinforce"] = REINFORCE
+REGISTRY["reinforce"] = REINFORCE
 REGISTRY["a2c"] = A2C
 # REGISTRY["ppo"] = PPO
 # REGISTRY["dqn"] = DQN
