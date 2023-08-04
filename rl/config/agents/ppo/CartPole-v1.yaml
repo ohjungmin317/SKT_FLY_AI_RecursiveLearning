@@ -41,13 +41,13 @@ local_results_path: "results" # Path for local results
 max_environment_steps: 100000          # maximum environment steps
 n_steps: 128
 n_episodes: 0
-n_epochs: 3 #  update policy for nepochs in one leaner update
-batch_size: 32 # Number of samples to train
+n_epochs: 10 #  update policy for nepochs in one leaner update
+batch_size: 64 # Number of samples to train
 
 
 # Learning Rate
-lr_policy: 0.0005       # learning rate for actor network
-lr_critic: 0.0005        # learning rate for critic network
+lr_policy: 0.001       # learning rate for actor network
+lr_critic: 0.001        # learning rate for critic network
 
 # Learning Rate Annealing
 lr_annealing: True

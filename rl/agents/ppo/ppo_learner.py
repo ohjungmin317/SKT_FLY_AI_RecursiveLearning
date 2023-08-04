@@ -79,8 +79,10 @@ class PPOLearner(Learner):
         ratios = ratios.prod(1, keepdim=True)
 
         # policy loss
-        surrogate1 = # your code
-        surrogate2 = # your code
+        surrogate1 = ratios * advantages # your code
+        surrogate2 = torch.clamp(ratios,
+                                 1 - self.clipping_epsilon,
+                                 1 + self.clipping_epsilon) * advantages # your code
 
         policy_loss = -torch.min(surrogate1, surrogate2).mean()
 
