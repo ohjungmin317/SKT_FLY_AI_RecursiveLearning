@@ -14,14 +14,14 @@ if __name__ == '__main__':
                         '--agent',
                         help='agent name {reinforce, reinforce_baseline, a2c, ppo, dqn, ddqn}',
                         type=str,
-                        default='reinforce')
+                        default='a2c')
 
     # environment name
     parser.add_argument('-e',
                         '--env',
                         help='run type {CartPole-v1, Acrobot-v1, LunarLander-v2, LunarLanderContinuous-v2}',
                         type=str,
-                        default='Acrobot-v1')
+                        default='CartPole-v1')
 
     args = parser.parse_args()
 

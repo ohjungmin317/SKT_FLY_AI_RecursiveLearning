@@ -13,7 +13,8 @@ class A2CNetwork(NetworkBase):
     def __init__(self,
                  config: SimpleNamespace,
                  logger: Logger,
-                 environment_spec: EnvironmentSpec):
+                 environment_spec: EnvironmentSpec,
+                 n_agents: int = 1): # change the code
 
         super(A2CNetwork, self).__init__(config, logger, environment_spec)
 
@@ -60,7 +61,8 @@ class A2CNetwork(NetworkBase):
         log_prob = distribution.log_prob(action)
 
         if b_squeeze: log_prob = log_prob.unsqueeze(-1)
-        if (log_prob < -1e05).any(): print(log_prob)
+
+       # if (log_prob < -1e05).any(): print(log_prob)
 
         return log_prob
 
