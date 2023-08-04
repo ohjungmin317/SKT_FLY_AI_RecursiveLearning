@@ -43,7 +43,7 @@ n_steps: 128
 n_episodes: 0
 n_epochs: 0 #  update policy for n epochs in one leaner update
 gradient_steps: 64
-batch_size: 64 # Number of samples to train
+batch_size: 128 # Number of samples to train
 
 # Learning Rate
 lr_critic:  0.0005      # learning rate for critic network
@@ -63,7 +63,7 @@ epsilon_finish: 0.01
 epsilon_anneal_time: 70000
 
 # Replay Buffer
-warmup_step: 1000 # 25000
+warmup_step: 5000 # 25000
 replay_buffer_size: 10000 # 100000
 
 # Gradient Clipping

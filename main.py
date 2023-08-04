@@ -14,7 +14,7 @@ if __name__ == '__main__':
                         '--agent',
                         help='agent name {reinforce, reinforce_baseline, a2c, ppo, dqn, ddqn}',
                         type=str,
-                        default='a2c')
+                        default='dqn')
 
     # environment name
     parser.add_argument('-e',

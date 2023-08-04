@@ -58,8 +58,8 @@ class DQNLearner(Learner):
 
             # Critic Update
             with torch.no_grad():
-                next_q_values = # your code
-                next_max_q_value = # your code
+                next_q_values = self.target_critic(next_state) # your code
+                next_max_q_value = next_q_values.max(dim=1, keepdim=True)[0] # your code
                 target_q_value = reward + (1-done)*self.config.gamma*next_max_q_value   # target bootstrapping
 
             q_values = self.critic(state)    # current q value
